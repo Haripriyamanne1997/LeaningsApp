@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Call Synchronize Endpoint";
+}
+
+<h2>Call Synchronize Endpoint</h2>
+
+<form method="post" action="/Web/CallSynchronizeEndpoint">
+    <label for="plainEncryptedData">Encrypted Data:</label><br />
+    <textarea id="plainEncryptedData" name="plainEncryptedData" rows="5" cols="50"></textarea><br />
+    <button type="submit">Submit</button>
+</form>
+
+@if (ViewBag.ResponseContent != null)
+{
+    <h3>Response:</h3>
+    <pre>
+        @Html.Raw(ViewBag.ResponseContent)
+        </pre>
+}
