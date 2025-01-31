@@ -56,5 +56,5 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "learninggit-dfhuf8hmepedbccg.centralindia-01.azurewebsites.net"  # Replace with your Azure App Service name
+          app-name: "LearningGit"  # Replace with your Azure App Service name
           package: publish
