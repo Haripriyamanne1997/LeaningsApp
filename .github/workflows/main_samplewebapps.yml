@@ -48,7 +48,7 @@ jobs:
         id: deploy-to-staging
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'Samplewebapps'
+          app-name: 'Samplewebapps/stagin'
           slot-name: 'staging'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AD864D97415147C4A047568BA0DCA3F9 }}
           package: .
